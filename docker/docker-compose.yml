@@ -32,9 +32,9 @@ services:
     image: ruoyi/ruoyi-nacos:1.8.1
     container_name: nacos
     ports:
-      - "8848:8848"
-      - "9848:9848"
-      - "9849:9849"
+      - "8858:8858"
+#      - "9848:9848"
+#      - "9849:9849"
     environment:
       TZ: Asia/Shanghai
       JAVA_OPTS: "-Xms256m -Xmx512m"

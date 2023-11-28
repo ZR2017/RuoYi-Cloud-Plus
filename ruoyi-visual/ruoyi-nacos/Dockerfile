@@ -6,9 +6,10 @@ RUN mkdir -p /ruoyi/nacos
 
 WORKDIR /ruoyi/nacos
 
-EXPOSE 8848
+EXPOSE 8858
 
-ENV TZ=Asia/Shanghai JAVA_OPTS="-Xms256m -Xmx512m"
+ENV TZ=Asia/Shanghai \
+    JAVA_OPTS="-Xms256m -Xmx512m"
 
 ADD ./target/ruoyi-nacos.jar ./app.jar
 
